@@ -34,16 +34,22 @@
 <body>
 
     <main class = "game-window">
-        <section class = "modal">
+
+        <header class = "header">
+            <div class = "logo"><img src= "./images/logo.svg" alt = "logo" /></div>
+            <div class = "score">
+                <h2>SCORE</h2>
+                <p>12</p>
+            </div>
+        </header>
+        <div class = "overlay hide-overlay"></div>
+        <section class = "modal hide-modal">
             <h1 class = "modal-title">RULES</h1>
             <div class = "modal-icon"><img src = "./images/image-rules.svg" alt = "image-rules" /></div>
             <div class = "icon-close"><img src = "./images/icon-close.svg" alt = "icon-close" /></div>
         </section>
-        <div class = "overlay hide-overlay"></div>
 
-        <section class = "logo-score">
-
-        </section>
+       
     </main>
 
     <script src = "./js/script.js"></script>

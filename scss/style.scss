@@ -15,6 +15,7 @@ body{
     min-height: 100vh;
     background-image: radial-gradient($Radial-Gradient);
     overflow: hidden;
+    padding: 3rem 2rem;
 
     .overlay{
         position: absolute;
@@ -22,7 +23,7 @@ body{
         height: 100%;
         top: 0;
         left: 0;
-        background-color: rgba(0,0,0,0.19);
+        background-color: rgba(0,0,0,0.29);
     }
     .hide-overlay{
         display: none;
@@ -57,6 +58,36 @@ body{
     }
     .hide-modal{
         top: -100%;
+    }
+
+    .header{
+        border: 3px solid $Header-Outline;
+        border-radius: 1rem;
+        width: 45rem;
+        display: flex;
+        margin: auto;
+        padding: 1rem;
+        justify-content: space-between;
+
+        .score{
+            padding: 0.75rem 0;
+            width: 8rem;
+            height: 6.5rem;
+            background-color: white;
+            border-radius: 0.75rem;
+            text-align: center;
+
+            h2{
+                font-size: 1rem;
+                letter-spacing: 0.2rem;
+                color: $Score-Text;
+            }
+            p{
+                font-size: 3.5rem;
+                font-weight: bolder;
+                color: $Dark-Text;
+            }
+        }
     }
 }
 

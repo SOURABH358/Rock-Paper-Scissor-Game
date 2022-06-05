@@ -16,6 +16,7 @@ body {
   min-height: 100vh;
   background-image: radial-gradient(#1f3756, #141539);
   overflow: hidden;
+  padding: 3rem 2rem;
 }
 
 .game-window .overlay {
@@ -24,7 +25,7 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.19);
+  background-color: rgba(0, 0, 0, 0.29);
 }
 
 .game-window .hide-overlay {
@@ -73,6 +74,41 @@ body {
 
 .game-window .hide-modal {
   top: -100%;
+}
+
+.game-window .header {
+  border: 3px solid #606e85;
+  border-radius: 1rem;
+  width: 45rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  padding: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.game-window .header .score {
+  padding: 0.75rem 0;
+  width: 8rem;
+  height: 6.5rem;
+  background-color: white;
+  border-radius: 0.75rem;
+  text-align: center;
+}
+
+.game-window .header .score h2 {
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  color: #2a46c0;
+}
+
+.game-window .header .score p {
+  font-size: 3.5rem;
+  font-weight: bolder;
+  color: #3b4363;
 }
 
 @media screen and (max-width: 501px) {
