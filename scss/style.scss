@@ -39,7 +39,7 @@ body {
     }
 
     .modal {
-        position: absolute;
+        position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -113,14 +113,12 @@ body {
         grid-template-columns: 250px 250px;
         grid-template-rows: 200px 200px;
         justify-items: center;
-        row-gap: 0.5rem;
+        row-gap: .5rem;
 
     }
 
     .rules {
-        position: absolute;
-        right: 2rem;
-        bottom: 2rem;
+       align-self: flex-end;
         border: 3px solid $Header-Outline;
         color: white;
         border-radius: 0.5rem;
@@ -135,6 +133,7 @@ body {
         font-size: 1.5rem;
         font-weight: normal;
         text-align: center;
+        margin-bottom: 6.25rem;
         .picked-title{
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -146,7 +145,7 @@ body {
         }
         .picked {
             display: flex;
-            gap: 8rem;
+            gap: 10rem;
             align-items: center;
 
             .disc-selected {
@@ -203,6 +202,7 @@ body {
 
 @media screen and (max-width: 501px) {
     .game-window {
+        padding: 3rem 0;
         .modal {
             top: 0;
             left: 0;
@@ -231,5 +231,79 @@ body {
         .hide-modal {
             transform: translateY(-110%);
         }
+        .header{
+            width: 90%;
+            display: flex;
+            align-items: center;
+            .logo{
+                img{
+                    width: 60%;
+                }
+            }
+            .score{
+                width: 6rem;
+                height: 5rem;
+                border-radius: 0.4rem;
+                h2{
+                    font-size: 0.8rem;
+                }
+                p{
+                    font-size: 2.5rem;
+                }
+            }
+        }
+        .step-1{
+            width: 100%;
+            grid-template-columns: 1fr 1fr;
+            background-size: 60%;
+            gap: 0;
+            grid-template-rows: 170px;
+        }
+        .rules{
+            margin-top: 14rem;
+            align-self: center;
+        }
+        .step-2{
+            margin-top: 100px;
+            width: 100%;
+            display: flex;
+            flex-direction: column-reverse;
+            position: relative;
+            .picked-title{
+                column-gap: 2rem;
+                margin: 0;
+                margin-top: 2rem;
+                p{
+                    font-size: 1rem;
+                }
+            }
+            .picked{
+                justify-content: center;
+                gap: 4rem;
+                .disc-selected{
+                    width: 120px;
+                    height: 120px;
+                    border-width: 15px;
+                }
+                .result{
+                    position: absolute;
+                    bottom: -12rem;
+                }
+                .house{
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+        }
+        .disc{
+            width: 120px;
+            height: 120px;
+            border-width: 15px;
+        }
+        .remove{
+            display: none;
+        }
     }
+    
+    
 }

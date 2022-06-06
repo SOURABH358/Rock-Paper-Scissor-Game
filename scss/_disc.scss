@@ -11,6 +11,7 @@
     background-image: url('../images/icon-paper.svg');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 50%;
     border: 20px solid $Paper-Gradient-2;
     border-radius: 50%;
     box-shadow: inset 0px 7px 0px 0px rgba(0,0,0,0.19),0px 7px 0px 0px $Paper-Gradient-1;
@@ -30,6 +31,7 @@
     background-image: url('../images/icon-scissors.svg');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 50%;
     border: 20px solid $Scissors-Gradient-2;
     border-radius: 50%;
     box-shadow: inset 0px 7px 0px 0px rgba(0,0,0,0.19),0px 7px 0px 0px $Scissors-Gradient-1;
@@ -50,6 +52,7 @@
     background-image: url('../images/icon-rock.svg');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 50%;
     border: 20px solid $Rock-Gradient-2;
     border-radius: 50%;
     box-shadow: inset 0px 7px 0px 0px rgba(0,0,0,0.19),0px 7px 0px 0px $Rock-Gradient-1;

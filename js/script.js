@@ -28,18 +28,17 @@ Step1.addEventListener('click', (e) => {
     UserSelection = e.target.id;
     setTimeout(() => {
         Step1.classList.add('remove');
-
-    }, 200)
-    setTimeout(()=>{
         Step2.classList.remove('remove');
         User.classList.add(`${UserSelection}`)
-    },200)
+
+    }, 200)
+    
     setTimeout(()=>{
         House.classList.remove('house')
         House.classList.add('disc-selected')
         HouseSelection = HouseOptions[Math.floor(Math.random()*3)]
         House.classList.add(`${HouseSelection}`)
-    },1000);
+    },1200);
 
     setTimeout(()=>{
         Step2.classList.add('show-result')
@@ -57,7 +56,7 @@ Step1.addEventListener('click', (e) => {
                 score++;
         }
         Score.textContent = score
-    },2000)
+    },2200)
 })
 
 function checkWinner(){
