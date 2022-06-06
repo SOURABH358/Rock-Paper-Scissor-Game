@@ -17,6 +17,16 @@ body {
   background-image: radial-gradient(#1f3756, #141539);
   overflow: hidden;
   padding: 3rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .game-window .overlay {
@@ -83,7 +93,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto;
   padding: 1rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -109,6 +118,74 @@ body {
   font-size: 3.5rem;
   font-weight: bolder;
   color: #3b4363;
+}
+
+.game-window .step-1 {
+  margin-top: 100px;
+  background-image: url("../images/bg-triangle.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 250px 250px;
+      grid-template-columns: 250px 250px;
+  -ms-grid-rows: 200px 200px;
+      grid-template-rows: 200px 200px;
+  justify-items: center;
+  row-gap: 0.5rem;
+}
+
+.game-window .step-1 .disc {
+  width: 170px;
+  height: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.game-window .step-1 .paper {
+  background: white;
+  border: 20px solid #5671f5;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 0px 7px 0px 0px rgba(0, 0, 0, 0.19), 0px 7px 0px 0px #4865f4;
+          box-shadow: inset 0px 7px 0px 0px rgba(0, 0, 0, 0.19), 0px 7px 0px 0px #4865f4;
+}
+
+.game-window .step-1 .scissors {
+  background: white;
+  border: 20px solid #eca922;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 0px 7px 0px 0px rgba(0, 0, 0, 0.19), 0px 7px 0px 0px #ec9e0e;
+          box-shadow: inset 0px 7px 0px 0px rgba(0, 0, 0, 0.19), 0px 7px 0px 0px #ec9e0e;
+}
+
+.game-window .step-1 .rock {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/ span 3;
+  background: white;
+  border: 20px solid #dd405d;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 0px 7px 0px 0px rgba(0, 0, 0, 0.19), 0px 7px 0px 0px #dc2e4e;
+          box-shadow: inset 0px 7px 0px 0px rgba(0, 0, 0, 0.19), 0px 7px 0px 0px #dc2e4e;
+}
+
+.game-window .rules {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  border: 3px solid #606e85;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem 2rem;
+  letter-spacing: 0.2rem;
 }
 
 @media screen and (max-width: 501px) {
