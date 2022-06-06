@@ -115,15 +115,6 @@ body {
         justify-items: center;
         row-gap: 0.5rem;
 
-        .disc {
-            width: 170px;
-            height: 170px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-        }
-
     }
 
     .rules {
@@ -159,15 +150,30 @@ body {
             align-items: center;
 
             .disc-selected {
-                width: 220px;
-                height: 220px;
+                width: 270px;
+                height: 270px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 cursor: pointer;
-                border-width: 30px;
+                border-width: 35px;
             }
-
+            .result{
+                display: none;
+                h1{
+                    font-weight: normal;
+                    font-size: 3rem;
+                    letter-spacing: 0.3rem;
+                }
+                .begin{
+                    background-color: white;
+                    color: $Rock-Gradient-2;
+                    letter-spacing: 0.2rem;
+                    text-transform: uppercase;
+                    padding: 0.75rem 2rem;
+                    border-radius: 0.4rem;
+                }
+            }
             .house {
                 width: 170px;
                 height: 170px;
@@ -176,7 +182,20 @@ body {
             }
         }
     }
-
+    .show-result{
+        .picked-title{
+            column-gap: 15rem;
+        }
+        .picked{
+            gap: 2rem;
+            .result{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+        }
+    }
     .remove {
         display: none;
     }
