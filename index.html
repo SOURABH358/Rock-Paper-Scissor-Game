@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
         rel="stylesheet">
 
-    <link rel = "stylesheet" type = "text/css" href = "./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 
 <body>
@@ -33,40 +33,38 @@
 
 <body>
 
-    <main class = "game-window">
+    <main class="game-window">
 
-        <header class = "header">
-            <div class = "logo"><img src= "./images/logo.svg" alt = "logo" /></div>
-            <div class = "score">
+        <header class="header">
+            <div class="logo"><img src="./images/logo.svg" alt="logo" /></div>
+            <div class="score">
                 <h2>SCORE</h2>
                 <p>12</p>
             </div>
         </header>
-        <section class = "step-1">
-            <div class = "paper disc">
-                <img src = "./images/icon-paper.svg" alt = "icon-paper"/>
-            </div>
-            <div class = "scissors disc">
-                <img src = "./images/icon-scissors.svg" alt = "icon-scissors"/>
-            </div>
-            <div class = "rock disc">
-                <img src = "./images/icon-rock.svg" alt = "icon-rock"/>
-            </div>
+        <section class="step-1">
+            <div id="paper" class="paper disc"></div>
+            <div id="scissors" class="scissors disc"></div>
+            <div id="rock" class="rock disc"></div>
         </section>
 
-        <div class = "rules">RULES</div>
-
-        <div class = "overlay hide-overlay"></div>
-        <section class = "modal hide-modal">
-            <h1 class = "modal-title">RULES</h1>
-            <div class = "modal-icon"><img src = "./images/image-rules.svg" alt = "image-rules" /></div>
-            <div class = "icon-close"><img src = "./images/icon-close.svg" alt = "icon-close" /></div>
+        <section class="step-2 remove">
+            <h1>step-2</h1>
         </section>
 
-       
+        <div class="rules">RULES</div>
+
+        <div class="overlay hide-overlay"></div>
+        <section class="modal hide-modal">
+            <h1 class="modal-title">RULES</h1>
+            <div class="modal-icon"><img src="./images/image-rules.svg" alt="image-rules" /></div>
+            <div class="icon-close"><img src="./images/icon-close.svg" alt="icon-close" /></div>
+        </section>
+
+
     </main>
 
-    <script src = "./js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
