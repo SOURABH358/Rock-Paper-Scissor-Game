@@ -1,4 +1,42 @@
-*, ::after, ::before {
+.paper {
+  background-color: white;
+  background-image: url("../images/icon-paper.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 20px solid #5671f5;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 0px 7px 0px 0px rgba(0, 0, 0, 0.19), 0px 7px 0px 0px #4865f4;
+          box-shadow: inset 0px 7px 0px 0px rgba(0, 0, 0, 0.19), 0px 7px 0px 0px #4865f4;
+}
+
+.scissors {
+  background-color: white;
+  background-image: url("../images/icon-scissors.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 20px solid #eca922;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 0px 7px 0px 0px rgba(0, 0, 0, 0.19), 0px 7px 0px 0px #ec9e0e;
+          box-shadow: inset 0px 7px 0px 0px rgba(0, 0, 0, 0.19), 0px 7px 0px 0px #ec9e0e;
+}
+
+.rock {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/ span 3;
+  background-color: white;
+  background-image: url("../images/icon-rock.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 20px solid #dd405d;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 0px 7px 0px 0px rgba(0, 0, 0, 0.19), 0px 7px 0px 0px #dc2e4e;
+          box-shadow: inset 0px 7px 0px 0px rgba(0, 0, 0, 0.19), 0px 7px 0px 0px #dc2e4e;
+}
+
+*,
+::after,
+::before {
   margin: 0;
   font-family: 'Barlow Semi Condensed', sans-serif;
   -webkit-box-sizing: border-box;
@@ -151,42 +189,6 @@ body {
   cursor: pointer;
 }
 
-.game-window .step-1 .paper {
-  background-color: white;
-  background-image: url("../images/icon-paper.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 20px solid #5671f5;
-  border-radius: 50%;
-  -webkit-box-shadow: inset 0px 7px 0px 0px rgba(0, 0, 0, 0.19), 0px 7px 0px 0px #4865f4;
-          box-shadow: inset 0px 7px 0px 0px rgba(0, 0, 0, 0.19), 0px 7px 0px 0px #4865f4;
-}
-
-.game-window .step-1 .scissors {
-  background-color: white;
-  background-image: url("../images/icon-scissors.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 20px solid #eca922;
-  border-radius: 50%;
-  -webkit-box-shadow: inset 0px 7px 0px 0px rgba(0, 0, 0, 0.19), 0px 7px 0px 0px #ec9e0e;
-          box-shadow: inset 0px 7px 0px 0px rgba(0, 0, 0, 0.19), 0px 7px 0px 0px #ec9e0e;
-}
-
-.game-window .step-1 .rock {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1/ span 3;
-  background-color: white;
-  background-image: url("../images/icon-rock.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 20px solid #dd405d;
-  border-radius: 50%;
-  -webkit-box-shadow: inset 0px 7px 0px 0px rgba(0, 0, 0, 0.19), 0px 7px 0px 0px #dc2e4e;
-          box-shadow: inset 0px 7px 0px 0px rgba(0, 0, 0, 0.19), 0px 7px 0px 0px #dc2e4e;
-}
-
 .game-window .rules {
   position: absolute;
   right: 2rem;
@@ -200,7 +202,58 @@ body {
 }
 
 .game-window .step-2 {
-  display: block;
+  margin-top: 60px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+.game-window .step-2 .picked-title {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 6rem;
+          column-gap: 6rem;
+  margin-bottom: 3rem;
+}
+
+.game-window .step-2 .picked-title p {
+  letter-spacing: 0.1rem;
+}
+
+.game-window .step-2 .picked {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.game-window .step-2 .picked .disc-selected {
+  width: 220px;
+  height: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  border-width: 30px;
+}
+
+.game-window .step-2 .picked .house {
+  width: 170px;
+  height: 170px;
+  background-color: rgba(0, 0, 0, 0.29);
+  border-radius: 50%;
 }
 
 .game-window .remove {
