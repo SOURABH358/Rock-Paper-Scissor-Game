@@ -4,23 +4,15 @@ This is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](h
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
+- [The challenge](#the-challenge)
+- [Screenshot](#screenshot)
+- [Built with](#built-with)
+- [Continued development](#continued-development)
+- [Links](#links)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
-## Overview
-
-### The challenge
+## The challenge
 
 Users should be able to:
 
@@ -36,13 +28,8 @@ Users should be able to:
 
 Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
 
-### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
-
-### Built with
+## Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
@@ -51,13 +38,18 @@ Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to t
 - SCSS
 - JS
 
-### Continued development
+## Continued development
 
-Currently working on Rock, Paper, Scissors, Lizard, Spock game.
+Currently working on Rock, Paper, Scissors, Lizard, Spock game.  
+
+### Links
+
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## Author
 
-GitHub - [@Sourabh358](https://github.com/SOURABH358)
+GitHub - [@Sourabh358](https://github.com/SOURABH358)  
 Frontend Mentor - [@Sourabh358](https://www.frontendmentor.io/profile/sourabh358)
 
 ❤ Sourabh Yadav 
