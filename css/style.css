@@ -1,6 +1,6 @@
 .disc {
-  width: 170px;
-  height: 170px;
+  width: 200px;
+  height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,7 +180,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1rem;
+  padding: 1rem 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -189,7 +192,6 @@ body {
 .game-window .header .score {
   padding: 0.75rem 0;
   width: 8rem;
-  height: 6.5rem;
   background-color: white;
   border-radius: 0.75rem;
   text-align: center;
@@ -202,22 +204,22 @@ body {
 }
 
 .game-window .header .score p {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   font-weight: bolder;
   color: #3b4363;
 }
 
 .game-window .step-1 {
-  margin-top: 100px;
+  margin-top: 60px;
   background-image: url("../images/bg-triangle.svg");
   background-position: center;
   background-repeat: no-repeat;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 250px 250px;
-      grid-template-columns: 250px 250px;
-  -ms-grid-rows: 200px 200px;
-      grid-template-rows: 200px 200px;
+  -ms-grid-columns: 270px 270px;
+      grid-template-columns: 270px 270px;
+  -ms-grid-rows: 240px 240px;
+      grid-template-rows: 240px 240px;
   justify-items: center;
   row-gap: .5rem;
 }
@@ -377,20 +379,20 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 0.5rem 1rem;
   }
   .game-window .header .logo img {
     width: 60%;
   }
   .game-window .header .score {
     width: 6rem;
-    height: 5rem;
     border-radius: 0.4rem;
   }
   .game-window .header .score h2 {
     font-size: 0.8rem;
   }
   .game-window .header .score p {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
   .game-window .step-1 {
     width: 100%;

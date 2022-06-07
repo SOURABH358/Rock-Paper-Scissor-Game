@@ -79,13 +79,13 @@ body {
         border-radius: 1rem;
         width: 45rem;
         display: flex;
-        padding: 1rem;
+        padding: 1rem 2rem;
+        align-items: center;
         justify-content: space-between;
 
         .score {
             padding: 0.75rem 0;
             width: 8rem;
-            height: 6.5rem;
             background-color: white;
             border-radius: 0.75rem;
             text-align: center;
@@ -97,7 +97,7 @@ body {
             }
 
             p {
-                font-size: 3.5rem;
+                font-size: 4.5rem;
                 font-weight: bolder;
                 color: $Dark-Text;
             }
@@ -105,13 +105,13 @@ body {
     }
 
     .step-1 {
-        margin-top: 100px;
+        margin-top: 60px;
         background-image: url('../images/bg-triangle.svg');
         background-position: center;
         background-repeat: no-repeat;
         display: grid;
-        grid-template-columns: 250px 250px;
-        grid-template-rows: 200px 200px;
+        grid-template-columns: 270px 270px;
+        grid-template-rows: 240px 240px;
         justify-items: center;
         row-gap: .5rem;
 
@@ -203,6 +203,7 @@ body {
 @media screen and (max-width: 501px) {
     .game-window {
         padding: 3rem 0;
+        
         .modal {
             top: 0;
             left: 0;
@@ -235,6 +236,7 @@ body {
             width: 90%;
             display: flex;
             align-items: center;
+            padding: 0.5rem 1rem;
             .logo{
                 img{
                     width: 60%;
@@ -242,13 +244,12 @@ body {
             }
             .score{
                 width: 6rem;
-                height: 5rem;
                 border-radius: 0.4rem;
                 h2{
                     font-size: 0.8rem;
                 }
                 p{
-                    font-size: 2.5rem;
+                    font-size: 3rem;
                 }
             }
         }
