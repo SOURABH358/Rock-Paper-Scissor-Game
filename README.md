@@ -18,16 +18,16 @@ Users should be able to:
 
 - View the optimal layout for the game depending on their device's screen size
 - Play Rock, Paper, Scissors against the computer
-- Maintain the state of the score after refreshing the browser _(optional)_
-- **Bonus**: Play Rock, Paper, Scissors, Lizard, Spock against the computer _(optional)_
+- Maintain the state of the score after refreshing the browser
 
 ### Screenshot
 
-![](./images/screenshot.jpg)
-
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
+<p align = "center">
+  <img src = "./images/screenshot-1.jpg"/>
+</p>
+<p align = "center">
+  <img src = "./images/screenshot-2.jpg"/>
+</p>
 
 ## Built with
 
@@ -44,8 +44,8 @@ Currently working on Rock, Paper, Scissors, Lizard, Spock game.
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution](https://your-solution-url.com)
+- Live Site URL: [live site](https://sourabh358.github.io/Rock-Paper-Scissor-Game/)
 
 ## Author
 
