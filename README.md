@@ -22,9 +22,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/screenshot-1.jpg)
-![](./images/screenshot-2.jpg)
-
+<p align = "center">
+  <img src = "./images/screenshot-1.jpg"/>
+</p>
+<p align = "center">
+  <img src = "./images/screenshot-2.jpg"/>
+</p>
 
 ## Built with
 
