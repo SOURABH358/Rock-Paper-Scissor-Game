@@ -60,7 +60,6 @@ Step1.addEventListener('click', (e) => {
 })
 
 function checkWinner(){
-    console.log(UserSelection, HouseSelection)
     if(UserSelection==='paper'&&HouseSelection==='rock'){
         return 'user';
     }
