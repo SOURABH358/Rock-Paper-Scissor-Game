@@ -44,7 +44,7 @@ Currently working on Rock, Paper, Scissors, Lizard, Spock game.
 
 ### Links
 
-- Solution URL: [solution](https://your-solution-url.com)
+- Solution URL: [solution](https://www.frontendmentor.io/solutions/rock-paper-and-scissors-game-y-goUAtnDd)
 - Live Site URL: [live site](https://sourabh358.github.io/Rock-Paper-Scissor-Game/)
 
 ## Author
